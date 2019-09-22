@@ -1,0 +1,7 @@
+.allProjects {
+    display:grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 150px 13em;
+    grid-gap:0px;
+}

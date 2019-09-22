@@ -1,0 +1,50 @@
+.Header {
+    position: fixed;
+    width:100%;
+    padding: 50px 0;
+    z-index: 100;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderScrolled {
+    background: rgba(0,0,0,0.8);
+    padding: 13px 0;
+}
+
+.Nav {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7,7fr);
+    align-items:center;
+    justify-items: center;
+
+}
+
+.Header a {
+    color: white;
+    font-weight: 700;
+}
+
+.Nav img {
+    transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Nav img:hover {
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.25); */
+    transform: translateY(-3px)
+}
+
+@media (max-width: 640px) {
+    .Header {
+        padding: 15px 0;
+    }
+
+    .Nav {
+        grid-template-columns: repeat(3,auto)
+    }
+
+    .Header a:nth-child(3) {
+        display:none;
+    }
+}
